@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 20px;
+}
+.header-info{
+    margin-top: 10px;
+}
+
+.main{
+ display: flex;
+ flex-direction: row ;
+ justify-content:space-evenly;
+ align-items:stretch;
+ flex-wrap: wrap;
+ padding-left: 50px;
+ padding-right: 50px;
+ margin-top: 20px;
+ margin-bottom: 40px;
+ flex-grow: 1;
+}
+
+.main .About{
+    background-color: #424242;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: nowrap;
+}
+
+.main .About h2{
+    font-size: 20px;
+}
+
+.main .About p{
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.main .Skills {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: #424242;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 8px;
+    /*width: 20%;*/
+    margin: 10px;
+}
+
+.main .Skills h2{
+    font-size: 20px;
+}
+
+.main .Skills ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-items:center;
+}
+
+.main .Skills ul li{
+    margin: 3px ;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.main .Experience{
+    box-sizing: border-box;
+    flex-grow: 3;
+    flex-wrap: wrap;
+    background-color: #424242;
+    border-radius: 5px;
+    padding: 8px;
+    /*width: 70%;*/
+    margin: 10px;
+    
+}
+
+.main .Skills,
+.main .Experience {
+    background-color: #424242;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    min-height: 100%; /* Ensures they take up the full available height */
+    flex-grow: 1; /* Allow both to grow */
+}
+
+
+.main .Skills {
+    flex-basis: 30%;
+}
+
+.main .Experience {
+    flex-basis: 60%; 
+}
+
+footer{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
